@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 100px;
+
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    margin-top: -75px;
+}
+
+.footer {
+    border: 3px solid black;
+    width: 80%;
+    left: 10%;
+    text-align: center;
+    position: fixed;
+    bottom: 25px;
+}
