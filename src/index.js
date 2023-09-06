@@ -17,6 +17,16 @@ function createMovieItem(movie) {
     likeButton.addEventListener("click", () => {
       likeMovie(movie.id);
     });
+
+    const commentButton = document.createElement("button");
+    commentButton.textContent = "Comment";
+    commentButton.classList.add("comment-popup-btn");
+  
+    // Add event listener for displaying the movie details popup
+    commentButton.addEventListener("click", () => {
+      showMoviePopup(movie);
+    });
+
     movieItem.appendChild(image);
     movieItem.appendChild(movieName);
     movieItem.appendChild(likeButton);
