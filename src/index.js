@@ -102,6 +102,11 @@ function showMoviePopup(movie) {
   document.getElementById("popup-container").style.display = "flex";
 }
 
+// Event listener for closing the movie details popup
+document.getElementById("close-popup-btn").addEventListener("click", () => {
+  document.getElementById("popup-container").style.display = "none";
+});
+
 // Event listener for displaying movie items
 document.addEventListener("DOMContentLoaded", async () => {
   const moviesData = await fetchMovies();
