@@ -30,6 +30,7 @@ function createMovieItem(movie) {
     movieItem.appendChild(image);
     movieItem.appendChild(movieName);
     movieItem.appendChild(likeButton);
+    movieItem.appendChild(commentButton);
     return movieItem;
   }
   // Function to fetch movies from the TV Maze
