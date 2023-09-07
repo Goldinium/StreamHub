@@ -1,3 +1,4 @@
+// Function to like a movie using the base API
 const sendLikes = (item_id) => fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/3dTEWwwumIK5aWu0ysQ3/likes', {
     method: 'POST',
 body: JSON.stringify({
