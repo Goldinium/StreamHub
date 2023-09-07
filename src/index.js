@@ -1,6 +1,11 @@
 import './style.css';
+<<<<<<< Updated upstream
 // import movieApiGet from './modules/apiGet.js';
 // import movieApiSend from './modules/apiSend.js';
+=======
+import sendLikes from './modules/apiSaveGet';
+import fetchLikes from './modules/apiSaveGet';
+>>>>>>> Stashed changes
 
 // Function to like a movie using the base API
 async function likeMovie(movieId) {
@@ -20,6 +25,7 @@ async function likeMovie(movieId) {
   } catch (error) {
     console.error('Error liking movie:', error);
   }
+<<<<<<< Updated upstream
 }
 
 // Function to show the movie details popup
@@ -42,6 +48,24 @@ function showMoviePopup(movie) {
     const listItem = document.createElement('li');
     listItem.textContent = description;
     descriptionList.appendChild(listItem);
+=======
+  // Function to fetch the number of likes for a movie from the base API
+  fetchLikes(movieID);
+
+  // Function to like a movie using the base API
+  sendLikes(movieID);
+
+  // Event listener for displaying movie items
+  document.addEventListener("DOMContentLoaded", async () => {
+    const moviesData = await fetchMovies();
+    const moviesSection = document.querySelector(".movies");
+    moviesData.forEach(async (movie) => {
+      const likes = await fetchLikes(movie.id);
+      movie.likes = likes;
+      const movieItem = createMovieItem(movie);
+      moviesSection.appendChild(movieItem);
+    });
+>>>>>>> Stashed changes
   });
 
   document.getElementById('popup-container').style.display = 'flex';
