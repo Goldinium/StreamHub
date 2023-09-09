@@ -127,7 +127,6 @@ Example commands:
 
 ```sh
 cd my-folder
-git init # if not initialized git on your folder
 git clone https://github.com/Goldinium/StreamHub.git
 cd StreamHub
 npm install # to install dependencies
