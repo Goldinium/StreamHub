@@ -1,64 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-    <script src="https://kit.fontawesome.com/36f3fcbf08.js" crossorigin="anonymous"></script>  
-    <title>StreamHub - Your cinema home</title>
+    <script src="https://kit.fontawesome.com/36f3fcbf08.js" crossorigin="anonymous"></script>
+    <link id="titleLogo" rel="icon" href="logo.png" type="png">
+    <title>StreamHub</title>
 <script defer src="main.js"></script></head>
+
 <body>
-    <div class="header">
-        <img src="assets/logo.png" class="logo">
-        <span>All shows</span>
-        <span><a href="#">Action</a></span>
-        <span><a href="#">Adventures</a></span>
-        <span><a href="#">Anime</a></span>
-</div>
-
-<main>
-    <i class="fa fa-heart"></i>
-    <section class="movies">
-
-        
-    </section>
-    <section class="popup-container" id="popup-container">
-        <div class="popup-content">
-            <div class="poster-container">
-              <button class="close-popup-btn" id="close-popup-btn"><i class="fa-solid fa-xmark fa-beat"></i></button>
-              <div class="poster-img">
-                <img id="poster-img" src="" alt="Poster Image">
-              </div>
+    <header>
+        <div class="logo">
+            <h1 class="header-title">StreamHub</h1>
+        </div>
+        <nav>
+            <a href="index.html" class="showsCount"></a>
+        </nav>
+    </header>
+    <main>
+        <div class="card-container"></div>
+    </main>
+    <div class="comment-popup">
+        <button class="close-popup-btn"><i class="fa-solid fa-xmark fa-beat"></i></button>
+        <div class="showDetails">
+            <img class="popup-photo" alt="movie-photo">
+            <div class="description">
+                <h2 class="movie-title"></h2>
+                <small class="genre"></small>
+                <p class="movie-summary"></p>
             </div>
-            <div class="poster-details">
-              <h2 class="poster-name" id="poster-name"></h2>
-              <div class="poster-description">
-                <ul class="description-list" id="description-list">
-                  <!-- Data will be populated here -->
-                </ul>
-              </div>
-            </div>
-            <div class="comment-container">
-              <h3 class="comment-title">Comments</h3>
-              <ul class="view-comment" id="view-comment"></ul>
-            </div>
-            <div class="add-comment-container">
-                <h3 class="add-comment-title">Add Comments</h3>
-                <form action="" class="add-comment-form" id="add-comment-form">
-                  <input type="text" class="add-name" name="name" id="comment-name" placeholder="Your name">
-                  <input type="text" class="add-comment" name="comment" id="comment-text" placeholder="Your insights">
-                  <button type="submit" id="add-comment-btn" class="add-comment-btn">Comment</button>
-                </form>
-              </div>
-          </div>
-    </section>
-   
-</main>
-
-<div class="footer">
-    This is the footer
-</div>
+        </div>
+        <h3 class="comments">Comments</h3>
+        <ul class="comments-list"></ul>
+        <form class="comment-form" action="">
+            <h3 class="form-title">Add a comment</h3>
+            <input class="name-input" type="text" placeholder="Your Name" required>
+            <textarea class="comment-input" name="" id="" cols="20" rows="5" placeholder="Drop your thought"
+                required></textarea>
+            <button class="submit-comment-btn" type="submit">
+                Comment
+            </button>
+        </form>
+    </div>
+    <footer>
+        <p>All right copy served.</p>
+    </footer>
 </body>
-<script src="./index.js"></script> 
 </html>
