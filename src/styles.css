@@ -29,9 +29,9 @@ header {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--black);
   border-radius: 40px;
-  box-shadow: 18px 16px 26px 2px rgba(0,0,0,0.83);
-  -webkit-box-shadow: 18px 16px 26px 2px rgba(0,0,0,0.83);
-  -moz-box-shadow: 18px 16px 26px 2px rgba(0,0,0,0.83);
+  box-shadow: 18px 16px 26px 2px rgba(0, 0, 0, 0.83);
+  -webkit-box-shadow: 18px 16px 26px 2px rgba(0, 0, 0, 0.83);
+  -moz-box-shadow: 18px 16px 26px 2px rgba(0, 0, 0, 0.83);
 }
 
 .myLogo {
@@ -51,14 +51,14 @@ nav {
   gap: 10%;
 }
 
-nav>a {
+nav > a {
   text-decoration: none;
   font-size: 1.5em;
   color: var(--white);
   transition: 0.5s;
 }
 
-nav>a:hover {
+nav > a:hover {
   color: var(--accentColor);
 }
 
@@ -79,9 +79,9 @@ main {
   width: 200px;
   height: 300px;
   border-radius: 10px;
-  box-shadow: 18px 16px 26px 2px rgba(0,0,0,0.83);
--webkit-box-shadow: 18px 16px 26px 2px rgba(0,0,0,0.83);
--moz-box-shadow: 18px 16px 26px 2px rgba(0,0,0,0.83);
+  box-shadow: 18px 16px 26px 2px rgba(0, 0, 0, 0.83);
+  -webkit-box-shadow: 18px 16px 26px 2px rgba(0, 0, 0, 0.83);
+  -moz-box-shadow: 18px 16px 26px 2px rgba(0, 0, 0, 0.83);
 }
 
 .caption {
@@ -139,12 +139,13 @@ footer {
   background-color: var(--black);
   border-radius: 20px;
   text-align: center;
-  box-shadow: 18px 16px 26px 2px rgba(0,0,0,0.83);
-  -webkit-box-shadow: 18px 16px 26px 2px rgba(0,0,0,0.83);
-  -moz-box-shadow: 18px 16px 26px 2px rgba(0,0,0,0.83);
+  box-shadow: 18px 16px 26px 2px rgba(0, 0, 0, 0.83);
+  -webkit-box-shadow: 18px 16px 26px 2px rgba(0, 0, 0, 0.83);
+  -moz-box-shadow: 18px 16px 26px 2px rgba(0, 0, 0, 0.83);
 }
 
 /* Home End */
+
 /* Popup Start */
 
 .comment-popup {
@@ -198,7 +199,8 @@ footer {
   font-size: large;
 }
 
-.comments, .comments-list {
+.comments,
+.comments-list {
   color: var(--accentColor);
 }
 
