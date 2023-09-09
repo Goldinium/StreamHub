@@ -1,4 +1,5 @@
 import { baseUrl, involvementAppId } from './involvementApi.js';
+
 const getLikes = async () => {
   try {
     const response = await fetch(`${baseUrl}apps/${involvementAppId}/likes`);

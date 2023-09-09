@@ -1,4 +1,4 @@
-import commentsCounter from "./mock/countComment.js";
+import commentsCounter from './mock/countComment.js';
 
 test('test comment counter', () => {
   document.body.innerHTML = `

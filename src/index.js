@@ -1,6 +1,6 @@
 import './styles.css';
 import Logo from './logo.png';
-import getShows from './modules/getShow';
+import getShows from './modules/getShow.js';
 import { getLikes, addLike } from './modules/like.js';
 import { getComment, createComment, postComment } from './modules/comment.js';
 import displayShowsCounter from './modules/countShow.js';
