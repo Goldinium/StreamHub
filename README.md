@@ -135,7 +135,7 @@ npm install # to install dependencies
 
 ### Live deployment
 
--[@StreamHub](https://goldinium.github.io/StreamHub/dist)
+-[StreamHub](https://goldinium.github.io/StreamHub/dist)
 
 
 ### Usage
