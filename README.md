@@ -133,6 +133,10 @@ cd StreamHub
 npm install # to install dependencies
 ```
 
+### Live deployment
+
+-[@StreamHub](https://goldinium.github.io/StreamHub/dist)
+
 
 ### Usage
 To run the project, execute the following command:
