@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryColor: #c1292e;
+  --complementaryColor: #607196;
+  --accentColor: #ffc759;
+  --black: #171d1c;
+  --white: #efe9f4;
+}
+
+body {
+  background-color: var(--primaryColor);
+  color: var(--white);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  display: flex;
+  height: 10%;
+  gap: 100px;
+  padding: 3% 10%;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--black);
+  border-radius: 40px;
+  box-shadow: 18px 16px 26px 2px rgba(0, 0, 0, 0.83);
+  -webkit-box-shadow: 18px 16px 26px 2px rgba(0, 0, 0, 0.83);
+  -moz-box-shadow: 18px 16px 26px 2px rgba(0, 0, 0, 0.83);
+}
+
+.myLogo {
+  width: 100px;
+  height: 100px;
+  border-radius: 30%;
+}
+
+.header-title {
+  font-size: 2.2em;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+  gap: 10%;
+}
+
+nav > a {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: var(--white);
+  transition: 0.5s;
+}
+
+nav > a:hover {
+  color: var(--accentColor);
+}
+
+/* Home Start */
+
+main {
+  padding: 3% 3%;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+}
+
+.cardImg {
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 18px 16px 26px 2px rgba(0, 0, 0, 0.83);
+  -webkit-box-shadow: 18px 16px 26px 2px rgba(0, 0, 0, 0.83);
+  -moz-box-shadow: 18px 16px 26px 2px rgba(0, 0, 0, 0.83);
+}
+
+.caption {
+  display: flex;
+  border: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.likes {
+  font-weight: 300;
+  font-size: 1em;
+  color: var(--accentColor);
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.commentBtn,
+.likeBtn {
+  background: var(--white);
+  border: none;
+  height: 25px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: var(--black);
+  box-shadow: 17px 10px 26px 2px rgba(0, 0, 0, 0.83);
+  -webkit-box-shadow: 17px 10px 26px 2px rgba(0, 0, 0, 0.83);
+  -moz-box-shadow: 17px 10px 26px 2px rgba(0, 0, 0, 0.83);
+  opacity: 0.9;
+  transition: 0.5s;
+}
+
+.commentBtn:hover,
+.likeBtn:hover {
+  background-color: var(--accentColor);
+  color: var(--black);
+}
+
+.likeBtn:focus {
+  background-color: var(--primaryColor);
+  color: var(--white);
+}
+
+footer {
+  padding: 0 4%;
+  border: 1px solid var(--complementaryColor);
+  background-color: var(--black);
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 18px 16px 26px 2px rgba(0, 0, 0, 0.83);
+  -webkit-box-shadow: 18px 16px 26px 2px rgba(0, 0, 0, 0.83);
+  -moz-box-shadow: 18px 16px 26px 2px rgba(0, 0, 0, 0.83);
+}
+
+/* Home End */
+
+/* Popup Start */
+
+.comment-popup {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+  border: 2px solid gray;
+  display: none;
+  flex-direction: column;
+  z-index: 100;
+  overflow: auto;
+  padding: 20px 8%;
+  background-color: var(--black);
+  border-radius: 10px;
+}
+
+.comment-popup::-webkit-scrollbar {
+  display: none;
+}
+
+.close-popup-btn {
+  position: fixed;
+  top: 12%;
+  right: 12%;
+  font-weight: 700;
+  font-size: xx-large;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: var(--white);
+  transition: 0.5s;
+}
+
+.close-popup-btn:hover {
+  color: var(--primaryColor);
+}
+
+.showDetails {
+  display: flex;
+  height: 500px;
+}
+
+.description {
+  padding: 10% 0 0 10%;
+}
+
+.genre {
+  color: var(--accentColor);
+  font-size: large;
+}
+
+.comments,
+.comments-list {
+  color: var(--accentColor);
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  padding: 3%;
+  border: 3px solid var(--complementaryColor);
+  border-radius: 30px;
+}
+
+.popup-photo {
+  width: 50%;
+  height: 80%;
+  align-self: center;
+}
+
+.submit-comment-btn {
+  padding: 0.5rem;
+  border: 1px solid var(--black);
+  border-radius: 5px;
+  background-color: var(--white);
+  font-weight: 700;
+  color: var(--black);
+  width: 100px;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: 0.5s;
+}
+
+.submit-comment-btn:hover {
+  color: var(--white);
+  background-color: var(--primaryColor);
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  outline: none;
+  opacity: 0.9;
+}
