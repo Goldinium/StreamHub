@@ -126,11 +126,11 @@ Clone this repository to your desired folder:
 Example commands:
 
 ```sh
-  cd my-folder
-  git init # if not initialized git on your folder
-  git clone https://github.com/Goldinium/StreamHub.git
-  cd StreamHub
-  npm install # to install dependencies
+cd my-folder
+git init # if not initialized git on your folder
+git clone https://github.com/Goldinium/StreamHub.git
+cd StreamHub
+npm install # to install dependencies
 ```
 
 
@@ -147,27 +147,27 @@ Example commands:
 
 Test for webhint errors
 ```sh
-	npx hint .
+npx hint .
 ```
 
 Test for stylelint errors
 ```sh
-  npx stylelint "**/*.{css,scss}"
+npx stylelint "**/*.{css,scss}"
 ```
 
 Test for eslint errors
 ```sh
-	npx eslint .
+npx eslint .
 ```
 
 Trigger the build process of the project
 ```sh
-	npm run build
+npm run build
 ```
 
 Start the project 
 ```sh
-	npm start
+npm start
 ```
 
 <!-- AUTHORS -->
